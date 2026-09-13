@@ -2,12 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=https://uptisement.com/ig-dm/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Instagram inbound DM → booked calls — Uptisement</title>
+  <meta name="description" content="Live demo: inbound Instagram DMs that ask what people need, narrow the ask, and book a call. Done-for-you for local operators." />
+  <meta name="theme-color" content="#070b12" />
   <link rel="canonical" href="https://uptisement.com/ig-dm/" />
-  <title>Uptisement IG DM demo</title>
-  <script>location.replace("https://uptisement.com/ig-dm/");</script>
+  <link rel="icon" href="./logo.png" type="image/png" />
+  <meta property="og:title" content="Instagram inbound DM → booked calls — Uptisement" />
+  <meta property="og:description" content="Try the live inbox demo. Then put it on your Instagram." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://uptisement.com/ig-dm/" />
+  <meta property="og:image" content="https://uptisement.com/brand/uptisement-logo-locked-with-services.png" />
+  <link rel="stylesheet" href="./sell.css?v=1" />
 </head>
 <body>
-  <p><a href="https://uptisement.com/ig-dm/">Continue to Uptisement IG DM demo</a></p>
+  <a class="skip" href="#demo">Skip to live demo</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="https://uptisement.com/">
+      <img src="./logo.png" alt="" width="28" height="28" />
+      Uptisement
+    </a>
+    <nav>
+      <a href="https://uptisement.com/#services">Services</a>
+      <a class="btn" href="https://calendly.com/uptisement/30min" target="_blank" rel="noopener">Book a call</a>
+    </nav>
+  </header>
+
+  <main class="sell">
+    <section class="sell-hero">
+      <div class="sell-copy">
+        <p class="brand-lockup">Uptisement</p>
+        <p class="kicker">Product demo · Instagram inbound</p>
+        <h1>Your Instagram gets DMs. This turns them into booked calls.</h1>
+        <p class="lede">
+          Someone messages you. The inbox asks what they need, narrows the ask, and sends your booking link.
+          Not a cold pitch bot — inbound only.
+        </p>
+        <div class="cta-row">
+          <a class="btn magnet" href="https://calendly.com/uptisement/30min" target="_blank" rel="noopener">Put this on my IG</a>
+          <a class="ghost" href="#demo">Try the live inbox</a>
+        </div>
+        <ul class="bullets">
+          <li>Works after hours</li>
+          <li>One offer path — then Calendly / Fresha / your book link</li>
+          <li>Hand off to you when they ask for a human</li>
+        </ul>
+      </div>
+
+      <div class="sell-demo" id="demo">
+        <p class="demo-label">Live demo · tap like a customer</p>
+        <div class="phone" role="application" aria-label="Instagram inbound DM demo">
+          <div class="phone__notch" aria-hidden="true"></div>
+          <header class="dm-bar">
+            <img class="dm-bar__avatar" src="./avatar.png" alt="" width="36" height="36" />
+            <div>
+              <strong>uptisement</strong>
+              <span>Inbound demo</span>
+            </div>
+            <button type="button" class="ghost-chip" id="resetBtn" title="Restart">Reset</button>
+          </header>
+          <div class="thread" id="thread" aria-live="polite"></div>
+          <div class="composer">
+            <div class="quick" id="quick" hidden></div>
+            <form id="form" autocomplete="off">
+              <label class="sr" for="input">Message</label>
+              <input id="input" name="message" type="text" placeholder="Message…" maxlength="280" />
+              <button type="submit" aria-label="Send">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sell-how">
+      <p class="kicker">How it ships</p>
+      <h2>Three steps. You keep the inbox.</h2>
+      <ol>
+        <li><strong>Connect</strong> your Instagram Business + ManyChat (Meta-safe).</li>
+        <li><strong>Load</strong> your offers, prices, and book link — human voice, not “AI assistant.”</li>
+        <li><strong>Go live</strong> after-hours first, then ads Click-to-Message when you’re ready.</li>
+      </ol>
+      <a class="btn magnet" href="https://calendly.com/uptisement/30min" target="_blank" rel="noopener">Book a call to install</a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="https://uptisement.com/">← Uptisement home</a>
+    <a href="mailto:sales@uptisement.com">sales@uptisement.com</a>
+    <a href="tel:+17869820283">(786) 982-0283</a>
+  </footer>
+
+  <script src="./app.js?v=2"></script>
 </body>
 </html>
