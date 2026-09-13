@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Uptisement — IG inbound DM demo</title>
+  <meta name="description" content="Demo: inbound Instagram DM that qualifies, narrows, and books a Calendly call." />
+  <meta name="theme-color" content="#070b12" />
+  <link rel="icon" href="./logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="top">
+    <img src="./logo.png" alt="" width="28" height="28" />
+    <div>
+      <p class="kicker">Uptisement · inbound IG DM</p>
+      <h1>Type hi. Watch it book a call.</h1>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="phone" role="application" aria-label="Instagram DM demo">
+      <div class="phone__notch" aria-hidden="true"></div>
+      <header class="dm-bar">
+        <img class="dm-bar__avatar" src="./avatar.png" alt="" width="36" height="36" />
+        <div>
+          <strong>uptisement</strong>
+          <span>Active now · demo</span>
+        </div>
+        <button type="button" class="ghost" id="resetBtn" title="Restart">Reset</button>
+      </header>
+
+      <div class="thread" id="thread" aria-live="polite"></div>
+
+      <div class="composer">
+        <div class="quick" id="quick" hidden></div>
+        <form id="form" autocomplete="off">
+          <label class="sr" for="input">Message</label>
+          <input id="input" name="message" type="text" placeholder="Message…" maxlength="280" />
+          <button type="submit" aria-label="Send">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <aside class="aside">
+      <p class="kicker">What this is</p>
+      <p>Same brain as ManyChat will use on Uptisement Instagram: ask → narrow to one offer → Calendly.</p>
+      <ul>
+        <li>No Page/IG yet? Demo still works.</li>
+        <li>Live IG: create Page + connect ManyChat (vault checklist).</li>
+        <li>CTA: <a href="https://calendly.com/uptisement/30min" target="_blank" rel="noopener">calendly.com/uptisement/30min</a></li>
+      </ul>
+      <p class="fine">Not a Meta product. Preview for Adil / clients.</p>
+    </aside>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
